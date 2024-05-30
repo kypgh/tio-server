@@ -1,0 +1,141 @@
+export default {
+  dbConnectionFailed: { message: "Server error", code: 1 },
+  userAlreadyExists: { message: "User already exists", code: 2 },
+  unsupportedRequestType: { message: "Unsupported request type", code: 3 },
+  bodyValidation: { message: "Body validation error", code: 4 },
+  invalidLoginCredentials: { message: "Invalid login credentials", code: 5 },
+  invalidPhoneOTP: { message: "Phone OTP is invalid", code: 6 },
+  userDoesNotExist: { message: "User with that email does not exist", code: 7 },
+  resetPasswordTokenNotFound: {
+    message: "Reset password token does not exist",
+    code: 8,
+  },
+  serverError: { message: "Server encountered an error", code: 9 },
+  queryValidation: { message: "Query validation error", code: 10 },
+  invalidRequestBody: { message: "Unable to parse request body", code: 11 },
+  userWithIdNotFound: { message: "User with that id not found", code: 12 },
+  userHasNoKYCDocuments: {
+    messag: "No kyc documents found for this user",
+    code: 13,
+  },
+  invalidJWT: { message: "Invalid JWT", code: 14 },
+  forbidden: { message: "Forbidden", code: 15 },
+  invalidRefreshToken: { message: "Invalid refresh token", code: 16 },
+  expiredJWT: { message: "Expired JWT", code: 17 },
+  roleAlreadyExists: { message: "Role already exists", code: 18 },
+  cannotDeleteDefaultAndAdminRoles: {
+    message: "Cannot delete default and admin roles",
+    code: 19,
+  },
+  expiredRefreshToken: { message: "Expired Refresh token", code: 20 },
+  usersDocumentNotFound: { message: "User document not found", code: 21 },
+  invalidUserToken: { message: "Invalid user token", code: 22 },
+  noAuthorizationHeader: { message: "No authorization header found", code: 23 },
+  badAuthorizationHeader: {
+    message: "Bad authorization header format",
+    code: 24,
+  },
+  userAccountNotFound: { message: "User account not found", code: 25 },
+  maxNumberOfTraderAccounts: ({ platform, env }) => ({
+    message: `Max number of ${env}-${platform} trader accounts`,
+    code: 26,
+  }),
+  invalidQueryParams: { message: "Invalid query params", code: 27 },
+  twillioError: { message: "Twilio error", code: 28 },
+  accessTokenNotFound: { message: "Access token not found", code: 29 },
+  otTokenNotFound: { message: "One time token not found", code: 30 },
+  userTokenExpired: { message: "User token expired", code: 31 },
+  userWithCTIDNotFound: {
+    message: "User with that ctrader id not found",
+    code: 32,
+  },
+  invalidPraxisSignature: { message: "Invalid praxis signature", code: 33 },
+  unsupportedRequestAction: { message: "Unsupported request action", code: 34 },
+  requestStatusIsNotPending: {
+    message:
+      "Request status is not pending therefore cannot perform any actions to it",
+    code: 35,
+  },
+  cannotDeleteFirstAccount: {
+    message: "Cannot delete first account",
+    code: 36,
+  },
+  userWithdrawalTransactionNotFound: {
+    message: "User withdrawal transaction not found",
+    code: 37,
+  },
+  invalidRequest: { message: "Invalid request", code: 38 },
+  cannotDepositToDemoAccount: {
+    message: "Cannot deposit to demo account",
+    code: 39,
+  },
+  cannotWithdrawFromDemoAccount: {
+    message: "Cannot withdraw from demo account",
+    code: 40,
+  },
+  insufficientFunds: { message: "Insufficient funds", code: 41 },
+  resetPasswordTokenExpired: {
+    message: "Reset password token expired",
+    code: 42,
+  },
+  maximumNumberOfDocumentsReached: {
+    message: "Maximum number of document attempts reached",
+    code: 43,
+  },
+  cannotApproveDocument: {
+    message: "Cannot approve document with na status",
+    code: 44,
+  },
+  cannotRejectDocument: {
+    message: "Cannot reject document with na or approved status",
+    code: 45,
+  },
+  forgotPasswordTooManyRetries: {
+    message: "Too many retries wait a bit before retrying",
+    code: 47,
+  },
+  roleAssignedToUsers: {
+    message: "Role assigned to users. (remove role from users before deleting)",
+    code: 48,
+  },
+  userSuspended: { message: "User suspended", code: 49 },
+  otTokenExpired: { message: "One time token expired", code: 50 },
+  ctraderEmailChangeError: { message: "Ctrader email change error", code: 51 },
+  invalidUserPassword: { message: "Invalid user password", code: 52 },
+  invalidExportFormat: { message: "Invalid export format", code: 53 },
+  segmentAlreadyExists: {
+    message: "A semgnet with the same name already exists",
+    code: 54,
+  },
+  userHasRibbon: { message: "User already has a ribbon", code: 55 },
+  segmentHasRibbon: { message: "Segment already has a ribbon", code: 56 },
+  ribbonNotFound: { message: "Ribbon not found", code: 57 },
+  permissionDenied: { message: "Permission denied", code: 58 },
+  kycNotApproved: { message: "KYC not approved", code: 59 },
+  userLinkedToDifferentInnovoultAccount: {
+    message: "User linked to different innovoult account",
+    code: 60,
+  },
+  accountLinkedToDifferentInnovoultWallet: {
+    message: "Account linked to different innovoult wallet",
+    code: 61,
+  },
+  invalidAccessToken: { message: "Invalid access token", code: 62 },
+  userDoesNotHaveMt5Account: {
+    message: "User does not have mt5 account",
+    code: 63,
+  },
+  invalidAmount: { message: "Invalid amount", code: 64 },
+  invalidResetPasswordToken: {
+    message: "Invalid reset password token",
+    code: 65,
+  },
+  jwtAuthenticationError: {
+    message: "Unable to authenticate user (invalid jwt)",
+    code: 66,
+  },
+  cannotDeleteAccountWithBalance: {
+    message: "Cannot delete account with balance",
+    code: 67,
+  },
+};
